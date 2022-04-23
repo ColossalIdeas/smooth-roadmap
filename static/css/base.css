@@ -3369,3 +3369,32 @@ Solution: stackoverflow.com/questions/34250282/flexbox-safari-bug-flex-wrap
   -ms-transform: scale(-1, 1);
   transform: scale(-1, 1);
 }
+
+.feature-icon {
+  float: left;
+  font-size: 70px !important;
+  margin-right: 32px;
+}
+
+.progress-strip {
+  /* background-color: #312c2d; */
+  min-width: 100px;
+  max-width: 100vw;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 2px;
+}
+
+.progress-strip > span {
+  flex-grow: 1;
+  margin-right: 4px;
+  min-width: 10px;
+  height: 2px;
+  background-color: #312c2d;
+}
+
+.progress-strip > span.lit {
+  background-color: #95c0d9;
+}
